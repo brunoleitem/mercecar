@@ -5,18 +5,21 @@ const content = [
     description: "Tradição e confiança para quem move o Brasil.",
     button: "Fale Conosco",
     image: "../assets/truck.jpg",
+    link: "./contact.html",
   },
   {
     title: "As melhores marcas em um só lugar.",
     description: "Revestimentos, freios, suspensão e muito mais.",
     button: "Ver Catálogo",
     image: "../assets/truck2.jpg",
+    link: "./products.html",
   },
   {
     title: "Entrega rápida em todo o Brasil.",
     description: "Qualidade e agilidade para manter sua frota em movimento.",
     button: "Peça um Orçamento",
     image: "../assets/truck3.jpg",
+    link: "./contact.html",
   },
 ];
 
@@ -29,6 +32,9 @@ function showSlide(index) {
   carouselContent.querySelector("h1").innerHTML = content[index].title;
   carouselContent.querySelector("p").innerHTML = content[index].description;
   carouselContent.querySelector("button").innerHTML = content[index].button;
+  carouselContent.querySelector("button").addEventListener("click", () => {
+    window.location.href = content[index].link;
+  });
 }
 
 function startInterval() {
