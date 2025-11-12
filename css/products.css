@@ -63,3 +63,28 @@ article {
 #products-contact button:hover {
   background-color: var(--secondary-hover);
 }
+
+@media (max-width: 1400px) {
+  #products-categories {
+    width: 100%;
+  }
+
+  #products-categories ul {
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  #products-categories ul li {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #products-categories {
+    width: 100%;
+  }
+}
