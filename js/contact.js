@@ -14,4 +14,3 @@ contactForm.addEventListener("submit", async (e) => {
 
   alert("Enviado com sucesso!");
 });
-// kinhobolan@live.com
